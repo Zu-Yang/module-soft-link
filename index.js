@@ -119,11 +119,11 @@ program
       exec(command, { encoding: "buffer" }, (error, stdout, stderr) => {
         // 如果命令执行失败, 则抛出错误
         if (error) {
-          throw Error(iconv.decode(error, 'GBK'));
+          throw Error(iconv.decode(error, "GBK"));
         }
         // 如果命令执行成功, 则输出结果
         if (stdout) {
-          console.log("\x1B[36m%s\x1B[0m", iconv.decode(stdout, 'GBK'));
+          console.log("\x1B[36m%s\x1B[0m", iconv.decode(stdout, "GBK"));
         }
         // // 如果命令执行成功, 则继续执行
         // if (stderr) {
