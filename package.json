@@ -1,0 +1,27 @@
+{
+  "name": "module-soft-link",
+  "version": "1.0.1",
+  "description": "create node_modules soft connection to reduce hard disk consumption",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Zu-Yang/module-soft-link.git"
+  },
+  "keywords": [
+    "module-soft-link"
+  ],
+  "bin": {
+    "link": "index.js"
+  },
+  "dependencies": {
+    "co": "^4.6.0",
+    "co-prompt": "^1.0.0",
+    "commander": "^2.10.0",
+    "iconv-lite": "^0.6.3"
+  },
+  "author": "yang",
+  "license": "ISC"
+}
