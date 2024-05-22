@@ -1,6 +1,6 @@
 {
   "name": "module-soft-link",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "create node_modules soft connection to reduce hard disk consumption",
   "main": "index.js",
   "scripts": {
