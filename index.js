@@ -74,7 +74,7 @@ program
       // 创建软链接
       function createSoftLink() {
         // 获取当前工作区路径
-        const node_modules_path = process.cwd() + "\\node_module";
+        const node_modules_path = process.cwd() + "\\node_modules";
         // 检查当前路径下是否存在node_modules文件夹
         if (fs.existsSync(node_modules_path)) {
           console.error(
