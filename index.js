@@ -78,7 +78,7 @@ program
         // 检查当前路径下是否存在node_modules文件夹
         if (fs.existsSync(node_modules_path)) {
           console.error(
-            `\n> \x1B[36m${node_modules_path}\x1B[0m 已存在, 无法创建！`
+            `> \x1B[36m${node_modules_path}\x1B[0m 已存在, 无法创建！`
           );
           process.exit(1);
         }
@@ -99,7 +99,7 @@ program
       // 检查当前路径下是否存在node_modules文件夹
       if (!fs.existsSync(node_modules_path))
         return console.error(
-          `\n> 路径: \x1B[36m${node_modules_path}\x1B[0m 不存在`
+          `> 路径: \x1B[36m${node_modules_path}\x1B[0m 不存在`
         );
       // 判断node_modules文件夹是否为软链接
       if (fs.lstatSync(node_modules_path).isSymbolicLink()) {
@@ -107,9 +107,7 @@ program
         const rmdir = "rmdir %cd%\\node_modules";
         executeCommand(rmdir);
       } else {
-        console.error(
-          `\n> \x1B[36m${node_modules_path}\x1B[0m 非软链接无法移除`
-        );
+        console.error(`> \x1B[36m${node_modules_path}\x1B[0m 非软链接无法移除`);
       }
     } else {
       console.error("\x1B[31m%s\x1B[0m", "请输入正确命令！");
